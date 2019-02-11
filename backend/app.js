@@ -10,7 +10,7 @@ const app = express();
 
 mongoose
     .connect(
-        'mongodb://adm:adm123@localhost:27017/angularnode-meanstackguide?authSource=admin',
+        `mongodb://adm:adm123@${process.env.MONGODB_HOST}:${process.env.MONGODB_PORT}/angularnode-meanstackguide?authSource=admin`,
         { useCreateIndex: true, useNewUrlParser: true }
     )
     .then(() => {

@@ -44,3 +44,6 @@ Thumbs.db
 
 # Images
 images/
+
+# Environments
+nodemon.json
